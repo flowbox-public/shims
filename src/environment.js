@@ -87,7 +87,6 @@ function h$gettimeofday(tv_v,tv_o,tz_v,tz_o) {
   var now = Date.now();
   tv_v.dv.setInt32(tv_o,     (now / 1000)|0, true);
   tv_v.dv.setInt32(tv_o + 4, ((now % 1000) * 1000)|0, true);
-  tv_v.dv.setInt32(tv_o + 8, ((now % 1000) * 1000)|0, true);
   return 0;
 }
 
